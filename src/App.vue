@@ -1,20 +1,20 @@
 <script>
 export default {
-  onLaunch: function() {
+  onLaunch: function () {
     console.log("App Launch");
   },
-  onShow: function() {
+  onShow: function () {
     console.log("App Show");
   },
-  onHide: function() {
-    console.log("App Hide");
+  onHide: function () {
+    console.log("111");
   }
 };
 </script>
 
 <style>
 /*每个页面公共css */
-@import "./common/style/common.css";
+@import "./common/style/init.css";
 @import "./common/style/uni.css";
 @import "./common/style/animate.min.css";
 </style>
