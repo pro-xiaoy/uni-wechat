@@ -18,8 +18,6 @@ export default {
   onLoad () {
   },
   created () {
-    var a = 1
-    this.name = a
     console.log('222')
   },
   methods: {
