@@ -4,30 +4,23 @@ module.exports = {
     es6: true,
     node: true
   },
-  extends: [
-    'plugin:vue/essential',
-    'standard'
-  ],
+  extends: [],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
-    // uni: true
+    uni: true
   },
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module'
   },
+  parser: "vue-eslint-parser",
   plugins: [
     'vue'
   ],
   rules: {
     "init-declarations": ["error", "always"],
     "no-var": 2,
-    'import/extensions': ['error', 'always', {
-      js: 'never',
-      json: 'never',
-      vue: 'never',
-    }],
     "constructor-super": 2,
     "for-direction": 2,
     "getter-return": 2,

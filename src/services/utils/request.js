@@ -1,3 +1,5 @@
+let requestURL = ""
+
 function getType(data, method) { // 获取请求方式
   let type = {}
   if (!method) {
@@ -22,10 +24,9 @@ function getType(data, method) { // 获取请求方式
   }
   return type
 }
-
-function Request(url, data, method) {
+export default function Request(url, data, method) {
   return new Promise((resolve, reject) => {
-    //uni.showLoading()
+    // uni.showLoading()
     uni.request({
       url: requestURL + url,
       ...getType(data, method),
@@ -33,11 +34,10 @@ function Request(url, data, method) {
         resolve(res)
       },
       fail: err => {
-        //uni.hideLoading()
+        // uni.hideLoading()
         console.log('err')
         reject(err)
       }
     })
   }).catch(err => console.log(err))
 }
-export default Request

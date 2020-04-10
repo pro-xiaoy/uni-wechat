@@ -14,7 +14,7 @@ export default {
 
 <style>
 /*每个页面公共css */
-@import "./common/style/init.css";
-@import "./common/style/uni.css";
-@import "./common/style/animate.min.css";
+@import "./styles/init.css";
+@import "./styles/uni.css";
+@import "./styles/animate.min.css";
 </style>
